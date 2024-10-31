@@ -1,0 +1,3 @@
+/Users/chukhanhhh/Desktop/Hcmus/LibraryApplication/cmake-build-debug/CMakeFiles/LibraryApplication.dir
+/Users/chukhanhhh/Desktop/Hcmus/LibraryApplication/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/chukhanhhh/Desktop/Hcmus/LibraryApplication/cmake-build-debug/CMakeFiles/rebuild_cache.dir
