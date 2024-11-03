@@ -345,7 +345,7 @@ void createReturnSlip() {
         char transactionSlipBookISBN[MAX_SIZE];
 
         // Yêu cầu người dùng nhập ISBN của sách cần trả
-        std::cout << TRANSACTION_SLIP_BOOK_ISBN << "[ " <<(i) <<" ] "<<":";
+        std::cout << TRANSACTION_SLIP_BOOK_ISBN << "[ " <<(i) <<" ]";
         createValue(TRANSACTION_SLIP_BOOK_ISBN, transactionSlipBookISBN);
 
         // Tìm chỉ số của sách trong hệ thống theo ISBN
@@ -434,6 +434,8 @@ void createReturnSlip() {
     // Tăng chỉ số phiếu trả để chuẩn bị cho phiếu tiếp theo
     returnSlipIndex++;
 
+    // In phiếu trả sách
+    printReturnSlip(existingSlipIndex);
 
     // Cập nhật phiếu mượn còn lại nếu chưa trả hết sách
     if (numberOfBooksReturnSlip < currentBooksOnSlip) {

@@ -67,7 +67,7 @@ constexpr char BOOK_CODE_FIND[MAX_SIZE] = "mã quyển sách muốn tìm";
 constexpr char BOOK_CODE_FIND_NAME[MAX_SIZE] = "tên quyển sách muốn tìm";
 constexpr char CHOOSE_NUMBER_LIST_BOOK_ISBN[MAX_SIZE] = "-1, Nếu muốn thoát nhập mã sách ISBN";
 constexpr char CHOOSE_NUMBER_BORROW_BOOK_NUMBER[MAX_SIZE] = "số lượng sách muốn mượn";
-constexpr char CHOOSE_NUMBER_RETURN_BOOK_NUMBER[MAX_SIZE] = "số lượng sách muốn mượn";
+constexpr char CHOOSE_NUMBER_RETURN_BOOK_NUMBER[MAX_SIZE] = "số lượng sách muốn trả";
 
 
 // Common Function, để tạo input nhập giá trị vào cho từng title phía trên

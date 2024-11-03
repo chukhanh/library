@@ -27,3 +27,12 @@
 817	1020	1730602999911900514	LibraryApplication	c633b1a567df0894
 6	546	1730606569619863312	CMakeFiles/LibraryApplication.dir/Transaction/Transaction.cpp.o	c8b5f574e0c1d58d
 546	596	1730606570159251709	LibraryApplication	c633b1a567df0894
+6	543	1730612974566398200	CMakeFiles/LibraryApplication.dir/Transaction/Transaction.cpp.o	c8b5f574e0c1d58d
+543	703	1730612975103386394	LibraryApplication	c633b1a567df0894
+6	865	1730613268657453374	CMakeFiles/LibraryApplication.dir/Common/Common.cpp.o	4e541b1fb410adb6
+7	868	1730613268658108986	CMakeFiles/LibraryApplication.dir/Menu/Menu.cpp.o	8f435a30008659c4
+7	871	1730613268658473770	CMakeFiles/LibraryApplication.dir/Utils/Date.cpp.o	7e26936c1c8eae87
+8	878	1730613268659030217	CMakeFiles/LibraryApplication.dir/Transaction/Transaction.cpp.o	c8b5f574e0c1d58d
+7	879	1730613268658290607	CMakeFiles/LibraryApplication.dir/Book/Book.cpp.o	e54bc71a2d9f31be
+7	882	1730613268657904240	CMakeFiles/LibraryApplication.dir/Reader/Reader.cpp.o	b56a9f405cc3e0e9
+882	942	1730613269533312435	LibraryApplication	c633b1a567df0894
