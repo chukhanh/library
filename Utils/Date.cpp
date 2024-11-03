@@ -190,7 +190,8 @@ int calculateExcessDays(const char startDate[MAX_SIZE_DATE], const char endDate[
     }
 
     // Tính số ngày thừa
-    return daysFromDate(endDay, endMonth, endYear) - daysFromDate(startDay, startMonth, startYear);
+    const int excessDay = daysFromDate(endDay, endMonth, endYear) - daysFromDate(startDay, startMonth, startYear);
+    return excessDay > 0 ? excessDay : excessDay * -1  ;
 }
 
 int updateDay(const int month,const int year) {

@@ -213,8 +213,8 @@ void createBorrowingSlip() {
 
 void printBorrowingSlip(const int slipIndex) {
     // Kiểm tra xem chỉ số phiếu mượn có hợp lệ không
-    if (slipIndex < 0 || slipIndex >= borrowSlipIndex) {
-        std::cout << "Chỉ số phiếu mượn không hợp lệ." << std::endl;
+    if (slipIndex > MAX_SIZE) {
+        std::cout << "Chỉ số phiếu mượn không hợp lệ. Vì số lượng phiếu mượn lớn hơn quy định 265 phiếu" << std::endl;
         return;
     }
 
@@ -345,7 +345,7 @@ void createReturnSlip() {
         char transactionSlipBookISBN[MAX_SIZE];
 
         // Yêu cầu người dùng nhập ISBN của sách cần trả
-        std::cout << TRANSACTION_SLIP_BOOK_ISBN << (i) << ":";
+        std::cout << TRANSACTION_SLIP_BOOK_ISBN << "[ " <<(i) <<" ] "<<":";
         createValue(TRANSACTION_SLIP_BOOK_ISBN, transactionSlipBookISBN);
 
         // Tìm chỉ số của sách trong hệ thống theo ISBN
@@ -374,7 +374,7 @@ void createReturnSlip() {
 
     // Kiểm tra nếu ngày trả sách hợp lệ (không quá hạn)
     if (!isEndDateGreaterThanStartDate(newDate, returnSlipDueDate)) {
-        const int excessDays = calculateExcessDays(returnSlipDueDate, newDate);
+        const int excessDays = calculateExcessDays(newDate, returnSlipDueDate);
 
         if (INVALID_DATA == excessDays) return; // Kết thúc nếu tính toán không hợp lệ
 
@@ -492,7 +492,7 @@ void deleteSlipByIndex(const int slipIndex) {
     // Cập nhật số lượng phiếu mượn
     borrowSlipIndex--;
 
-    std::cout << "Phiếu mượn tại chỉ số " << slipIndex << " đã được xóa thành công." << std::endl;
+    std::cout << "Phiếu mượn tại chỉ số (" << slipIndex << ") đã được xóa thành công." << std::endl;
 }
 
 void removeBookFromBorrowingSlip(const int slipIndex, const char (&bookISBN)[MAX_SIZE]) {
